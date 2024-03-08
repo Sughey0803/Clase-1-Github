@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Celsius a Farenheit</title>
+</head>
+<body>
+    <h1>Calculadora de Grados Celsius a Farenheit</h1>
+    <script>
+        let Celsius = prompt ("Temperatura en Celsius");
+        let Temperatura = (Celsius*1.8)+32;
+        document.writeln ("El resultado en Grados Farenheit es  " + Temperatura + " Grados,");
+        const baja = 40;
+        const normal = 60;
+        const alta = 100;
+        if (Temperatura < baja){
+            document.writeln("  La temperatura es baja");
+        } else if (Temperatura >= baja && Temperatura <= normal){
+            document.writeln("  La temperatura es normal");
+        } else if (Temperatura >= normal){
+            document.writeln("  La temperatura es alta");
+        }
+    </script>
+</body>
+</html>
